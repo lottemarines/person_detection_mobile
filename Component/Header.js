@@ -5,7 +5,7 @@ export default class Header extends Component<Props> {
   render() {
     return (
       <View style={styles.header}>
-        <Text style={styles.header_title}>お天気アプリ</Text>
+        <Text style={styles.header_title}>あの人は今</Text>
       </View>
     );
   }
