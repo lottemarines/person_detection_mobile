@@ -10,7 +10,7 @@
     "privacy": "public",
     "slug": "api_mobile_test",
     "packagerOpts": {
-      "port": 50543
+      "port": 50955
     },
     "ios": {
       "supportsTablet": true

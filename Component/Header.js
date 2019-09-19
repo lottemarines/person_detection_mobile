@@ -5,7 +5,7 @@ export default class Header extends Component<Props> {
   render() {
     return (
       <View style={styles.header}>
-        <Text style={styles.header_title}>あの人は今</Text>
+        <Text style={styles.header_title}>CatchUpNow</Text>
       </View>
     );
   }
@@ -15,13 +15,13 @@ export default class Header extends Component<Props> {
 const styles = StyleSheet.create({
   header_title: {
     fontSize: 48,
-    color: '#282828',
+    color: '#241616',
     textAlign: 'center',
 	padding: 10,
     fontWeight: '600'
   },
   header: {
     justifyContent: 'center',
-    backgroundColor: '#1ebfff'
+    backgroundColor: '#80ffdf'
   }
 });

@@ -6,17 +6,18 @@ import DayComonent from '../Modules/DayComponent.js';
 export default class Weather extends Component<Props> {
   render() {
     const information = this.props.information
-
     function InformationExit() {
       if (information.length != 0) {
+		  const last_info = information[information.length - 1]
+		  const month = last_info.created_at.slice(5,7)
+		  const day = last_info.created_at.slice(8,10)
+		  const time = last_info.created_at.slice(11,16)
         return(
           <View style={styles.weather}>
-            <Text style={styles.weatherTitle}>{information[0].name}さんは</Text>
-			<Text style={styles.weatherTitle}>直近、
-				{information[0].created_at}頃、
-				{information[0].place}にいました</Text>
+            <Text style={styles.weatherTitle}>{last_info.name}さんは</Text>
+			<Text style={styles.weatherTitle}>直近{month}月{day}日{time}頃</Text>
+				<Text style={styles.weatherTitle}>{last_info.place}にいました</Text>
             <View style={styles.dayWeather}>
-              
             </View>
           </View>
         )

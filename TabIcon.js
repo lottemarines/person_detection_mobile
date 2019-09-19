@@ -1,0 +1,28 @@
+import React from 'react';
+import {
+    View,
+    Text,
+    StyleSheet,
+} from 'react-native';
+import Icon from 'react-native-vector-icons/FontAwesome';
+const styles = StyleSheet.create({
+    tabText: {
+        color: 'white',
+    },
+    tabTextActive: {
+        color: 'gray',
+    },
+});
+
+const TabIcon = props => (
+      <Text
+        style={
+          props.selected ?
+          styles.tebTextActive :
+          styles.tabText
+        }>
+		{props.title}
+      </Text>
+);
+
+export default TabIcon;
